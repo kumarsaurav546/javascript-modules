@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>validate</title>
+	<script type="text/javascript">
+		function validateinfo()
+		{
+			var x,y,p,q;
+			x=document.getElementById('username').value;
+			y=document.getElementById('password').value;
+			p=document.getElementById('m').checked;
+			q=document.getElementById('f').checked;
+
+			if (x==""||y=="") 
+			{
+				
+				if(p==false||q==false)
+				{
+					alert("PLEASE FILL IN ALL DETAILS!");
+					alert("PLEASE SELECT YOUR GENDER!");
+					return false;
+				}
+			}
+			else
+			{
+				if(p==false&&q==false)
+				{
+					alert("please select your gender!");
+					return false;
+				}else
+				{
+					return true;
+				}
+				return true;
+			}
+		}
+	
+
+	</script>
+</head>
+<body>
+<center><h1>Basic form validations</h1>
+<form action="validate.html" method="post" onsubmit="return validateinfo();">
+	<label>username :</label><input type="text" id="username"/>
+	<label>password :</label><input type="password" id="password"/>
+	<label>male:</label><input type="radio" value="Male" id="m">
+	<label>female:</label><input type="radio" value="Female" id="f">
+	<input type="submit" value="Login"/>
+</form>
+</center>
+</body>
+</html>

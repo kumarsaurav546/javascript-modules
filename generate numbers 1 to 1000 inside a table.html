@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Generating numbers inside a table.</title>
+		<script type="text/javascript">
+		function myFunction(){
+			document.write("<table>");
+			for (var i = 1; i <=1000; i++) {
+				document.write('<style type="text/css">td{border:2px solid black;}</style>');
+				document.write("<tr><td>"+i+"</td></tr>");
+
+			}document.write("</table>");
+		}
+	</script>
+	
+
+</head>
+<body>
+<div style="text-align:center;">
+	<h1>Genterating numbers 1 to 1000 inside a table.</h1>
+	<input type="button" name="generate" value="Generate" onclick="myFunction();">
+</div>
+
+</body>
+</html>

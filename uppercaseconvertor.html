@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>casechange</title>
+	<script type="text/javascript">
+		function myFunction1(){
+			var x=document.getElementById('name').value;
+			var y=x.toUpperCase();
+			document.getElementById('ch').innerHTML ="U :"+y;
+		}
+		function myFunction2()
+		{
+			var z=document.getElementById('name').value;
+			var p=z.toLowerCase();
+			document.getElementById('lc').innerHTML="L :"+p;
+		}
+	</script>
+</head>
+<body>
+<div style="text-align: center;">
+	<label>Name :</label>
+	<input type="text" name="name" id="name"/>
+	<input type="submit" name="button" value="uppercase" onclick="myFunction1();">
+	<input type="submit" name="button" value="lowecase" onclick="myFunction2();">
+	<p id="ch"></p>
+	<p id="lc"></p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>creating htnl elements</title>
+	<script type="text/javascript">
+		function func()
+		{
+			var x,y;
+			x=document.createElement("button");
+			y=document.createTextNode("New button");
+			x.appendChild(y);
+			document.body.appendChild(x);
+		}
+	</script>
+</head>
+<body>
+<center>
+	<h1>document.createElement() and document.createtextnode()</h1>
+	<input type="submit" name="button" value="click to create new button!" onclick="func();">
+</center>
+</body>
+</html>

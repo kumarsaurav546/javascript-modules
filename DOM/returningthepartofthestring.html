@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>substring()</title>
+	<script type="text/javascript">
+		function myFunction()
+		{
+			var s,x,y,z;
+			x=document.getElementById("string").value;
+			y=document.getElementById("start_index").value;
+			z=document.getElementById("end_index").value;
+			if(z>x.length)
+			{
+				alert("your ending index is exceeding the string length");
+			}
+			else
+			{
+				 s=x.substring(y,z);
+				document.getElementById("ss").innerHTML =s;
+			}
+		}
+	</script>
+</head>
+<body>
+<center>
+	<h1>Return substring from a string! </h1>
+	String :<input type="text" name="string" id="string"/>
+	<br><br>Start-index :<input type="text" name="string" id="start_index"/>
+	<br><br>End-index :<input type="text" id="end_index"/>
+	<br><br><input type="submit" name="s" onclick="myFunction();">
+	<br><br><h1 id="ss"></h1>
+</center>
+
+</body>
+</html>

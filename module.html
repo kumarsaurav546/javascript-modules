@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>tt</title>
+</head>
+<body>
+<button onclick="func();">click me</button>
+<button onclick="func();">click me</button>
+<center>
+<div id="aa">
+	<table style="border:2px solid black;">
+		<tr>
+			<td>1</td><td>2</td><td>3</td>
+		</tr>
+				<tr>
+			<td>1</td><td>2</td><td>3</td>
+		</tr>
+		<tr>
+			<td>1</td><td>2</td><td>3</td>
+		</tr>
+		<tr id="ab">
+			<td>4</td><td>5</td><td>6</td>
+		</tr>
+	</table>
+	</center>
+</div>
+<script type="text/javascript">
+	function func(){
+		if (aa.style.display==='block' && ab.style.display==='none') {
+			aa.style.display = 'block';
+			ab.style.display = 'block';
+		}else
+		{
+			aa.style.display = 'block';
+			ab.style.display = 'none';
+		}
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>generation of any multiple</title>
+	<script type="text/javascript">
+		
+		function myFunction(){
+			var x,y=1,r,p=0;
+			x=document.getElementById("input").value;
+			document.write("<table>");
+			for(var i=1;i<=1000;i++)
+			{	
+				r=x*y;
+				document.write('<style type="text/css">td{border:2px solid black;}</style>');
+				document.write("<tr><td>"+r+"</td></tr>");
+				y++;
+				p++;
+			}
+			document.write("</table>");
+			document.write("No of generated boxes : "+p);
+		}
+		
+	</script>
+</head>
+<body>
+<div style="text-align: center;">
+	<h1>Generation of multiple of giveb number x</h1>
+	<label>Provide the number :</label><input type="text" id="input" name="multiple" placeholder="x"/>
+	<input type="button" name="gen" value="generate" onclick="myFunction();"/>
+</div>
+
+</body>
+</html>

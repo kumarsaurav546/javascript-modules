@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>like</title>
+</head>
+<body>
+
+<div style="text-align:center;">
+<button id="a" type="submit" onclick="myFunction1()">like</button>
+<button id="b" type="submit" onclick="myFunction2()">unlike</button>
+</div>
+<script type="text/javascript">
+	function myFunction1()
+	{
+		var x,y=0;
+		y++;
+		x=document.getElementById("a").innerHTML;
+		document.getElementById("a").innerHTML="You("+y+") and 1.3k others like this";
+	}
+	function myFunction2()
+	{
+		var x;
+		
+		x=document.getElementById("a").innerHTML;
+		document.getElementById("a").innerHTML="like";
+	}
+
+
+
+</script>
+</body>
+</html>

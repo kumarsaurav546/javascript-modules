@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calculator</title>
+	<script type="text/javascript">
+		var a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z;
+		function mainFunction1(x,y)
+		{
+			var o= new Array();
+			x.push(x);
+			
+		}
+		function func(){
+		for(var i=0;i<10;i++)
+		{
+			document.write(x[2]);
+		}
+	}
+	</script>
+	<style type="text/css">
+		table,td{
+			border:2px solid black;
+			padding:0.5px;
+		}
+	</style>
+</head>
+<body style="background-color:grey; ">
+<center>
+<h1>A basic calculator!</h1>
+	<div id="first">
+	<table>
+	<tr>
+		<td colspan="4"><input type="text" id="input" name="output_screen"></td>
+	</tr>
+		<tr>
+			<td><input type="button" name="all_clear" value="C &nbsp;&nbsp;&nbsp;" id="j" onclick="mainFunction(77);"></td>
+			<td><input type="button" name="all_clear" value="()&nbsp;&nbsp;&nbsp;" id="k" onclick="mainFunction(66);"></td>
+			<td><input type="button" name="all_clear" value="%&nbsp;&nbsp;&nbsp; " id="l" onclick="mainFunction(55);"></td>
+			<td><input type="button" name="all_clear" value="/&nbsp;&nbsp;&nbsp;&nbsp;" id="m" onclick="mainFunction(44);"></td>
+		</tr>
+		<tr>
+			<td><input type="button" name="all_clear" value="7&nbsp;&nbsp;&nbsp;" id="g" onclick="mainFunction(7);"></td>
+			<td><input type="button" name="all_clear" value="8&nbsp;&nbsp;&nbsp;" id="h" onclick="mainFunction(8);"></td>
+			<td><input type="button" name="all_clear" value="9&nbsp;&nbsp;&nbsp;  " id="i" onclick="mainFunction(9);"></td>
+			<td><input type="button" name="all_clear" value="*&nbsp;&nbsp;&nbsp; " id="n" onclick="mainFunction(33);"></td>
+		</tr>
+		<tr>
+			<td><input type="button" name="all_clear" value="4&nbsp;&nbsp;&nbsp;" id="d" onclick="mainFunction(4);"></td>
+			<td><input type="button" name="all_clear" value="5&nbsp;&nbsp;&nbsp;" id="e" onclick="mainFunction(5);"></td>
+			<td><input type="button" name="all_clear" value="6&nbsp;&nbsp;&nbsp;  " id="f" onclick="mainFunction(6);"></td>
+			<td><input type="button" name="all_clear" value="- &nbsp;&nbsp;&nbsp;" id="o" onclick="mainFunction(22);"></td>
+		</tr>
+		<tr>
+			<td><input type="button" name="all_clear" value="1&nbsp;&nbsp;&nbsp;" id="a" onclick="mainFunction(1);"></td>
+			<td><input type="button" name="all_clear" value="2&nbsp;&nbsp;&nbsp;" id="b" onclick="mainFunction(2);"></td>
+			<td><input type="button" name="all_clear" value="3&nbsp;&nbsp;&nbsp;  " id="c" onclick="mainFunction(3);"></td>
+			<td><input type="button" name="all_clear" value="+&nbsp;&nbsp;&nbsp;" id="p" onclick="mainFunction(11);"></td>
+		</tr>
+		<tr>
+			<td><input type="button" name="all_clear" value=". &nbsp;&nbsp;&nbsp;" id="r" onclick="mainFunction(00);"></td>
+			<td><input type="button" name="all_clear" value="0&nbsp;&nbsp;&nbsp;" id="s" onclick="mainFunction(0);"></td>
+			<td><input type="button" name="all_clear" value="+/-&nbsp;&nbsp;&nbsp;" id="t" onclick="mainFunction(12);"></td>
+			<td><input type="button" name="all_clear" value="=&nbsp;&nbsp;&nbsp;" id="q" onclick="mainFunction(55);"></td>
+		</tr>
+	</table>
+	</div>
+	<input type="button" name="r" value="result!!" onclick="func();">
+</center>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>basicvalidation</title>
+	<script type="text/javascript">
+		function myFunction(){
+			var x,y,p,q;
+			x=document.getElementById("name").value;
+			y=document.getElementById("password").value;
+			p=document.getElementById("mail").value;
+			q=document.getElementById("age").value;
+			var v=y.length;
+			
+			if(x==""||y==""||p==""||q=="")
+			{
+				alert("ALL INPUTS ARE MANDATORY!");
+
+			}
+			else
+			{
+				alert("ALL INPUTS ARE VALID");
+				if(!x.match(/^[A-Z,a-z]([a-z]|[A-Z]|[0-9]){6,25}$/))
+				{
+					alert("Username(6-25 characters) should start with an alphabet!");
+				}
+				else
+				{
+					alert("Username correct!");
+					if(v<=6)
+					{
+						alert("pass length less than 6 :"+y.length);
+						if(!y.match(/^[A-Z,a-z,0-9]([A-Z]|[a-z]|[0-9]){6,25}$/))
+							{
+								alert("password should be a combination of characters and numbers(6-25)");
+								
+							}
+						else
+						{
+							alert("password correct!");
+							if(!p.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/))
+							{
+								alert("mail format should be : characters@characters.characters");
+							}
+							else
+							{
+								alert("mail-id ok!");
+								if(q>=10&&q<=90)
+								{
+									alert("age correct!");
+								}
+								else
+								{
+									alert("Age should be between 10 and 90.");
+								}
+							}
+						}
+					}
+					else
+					{
+						alert("pass length greater than 6 :"+y.length);
+						if(!y.match(/^[A-Z,a-z,0-9]([A-Z]|[a-z]|[0-9]){6,25}$/))
+							{
+								alert("password should be a combination of characters and numbers(6-25)");
+							}
+						else
+						{
+							alert("password correct!");
+							if(!p.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/))
+							{
+								alert("mail format should be : characters@characters.characters");
+								
+							}
+							else
+							{
+								alert("mail-id ok!");
+								if(q>=10&&q<=90)
+								{
+									alert("age correct!");
+								}
+								else
+								{
+									alert("Age should be between 10 and 90.");
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	</script>
+</head>
+<body>
+<div style="text-align:center;">
+<h1>Form validations with 1.username 2.password 3.mail-id 4.age</h1>
+	<label>Username :</label>
+	<input type="text" name="name" id="name"/><br>
+	<label>Password :</label>
+	<input type="password" name="name" id="password"/><br>
+	<label>Email :</label>
+	<input type="text" name="name" id="mail"/><br>
+	<label>Age :</label>
+	<input type="text" name="name" id="age"/><br>
+	<input type="submit" name="submit" onclick="myFunction();"/>
+	<input type="reset" name="submit"/>
+
+</div>
+</body>
+</html>

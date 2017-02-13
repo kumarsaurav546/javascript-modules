@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sreen property</title>
+	<script type="text/javascript">
+		function myFunction()
+		{
+			var x= window.frames[0];
+			var y=window.frames['iframe'];
+			if(x==y)
+			{
+				alert('true!');
+			}
+			else
+			{
+				alert("false");
+			}
+
+		}
+	</script>
+</head>
+<body>
+<h1>Returns true if window.frame[0]==window.frame['frame_name'] </h1>
+<iframe  sandbox="#"  src="https://www.w3schools.com"  name="iframe" width="500" height="500"></iframe><br>
+<input type="button" name="frame_button" onclick="myFunction();" value="click me!!" />
+</body>
+</html>

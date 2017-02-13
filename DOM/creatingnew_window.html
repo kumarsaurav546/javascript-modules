@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>subwindow</title>
+	<script type="text/javascript">
+		var x;
+		function myFunction()
+		{
+		 x=window.open("welcome.html","kumar saurav","height=1200px,width=1200px");
+			x.focus();
+		}
+		function myFunction1()
+		{
+
+			var x=document.getElementsByTagName("P")[0];
+			x.innerHTML="JHDVHASLDV";
+		}
+	</script>
+</head>
+<body>
+<center>
+<input type="submit" name="open" value="Open subwindow" onclick="myFunction();">
+<input type="submit" name="open" value="Close subwindow" onclick="myFunction1();">
+<p class="apple" onclick="myFunction1();">kumar saurav</p>
+</center>
+</body>
+</html>

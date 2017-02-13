@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>vari0ables</title>
+</head>
+<body>
+
+
+
+ <script type="text/javascript">
+var	
+varb="kumar saurav";
+Var123="test1";
+
+
+//escape character
+_var="Slow and steady wins the race \"this is a sub string\"";   // string and "\"***"\ is used as a escape statement in javascript.
+
+
+var apples=5;
+var mango=15;
+apples-=mango;
+document.write(apples+"</br>");
+document.write(varb+"</br>");
+document.write(Var123+"</br>");
+document.write(_var);
+
+
+//string concationation
+var sentence1="My name is kumar saurav";
+var sentence2="and my age is 20";
+document.write("</br>"+sentence1+sentence2);
+
+// strio ng concatenation with numbers
+var age=20;
+document.write("</br>hello you are "+age+" years old"); // we can use html tag inside " string".
+
+//events
+alert("You have been warned for opening this webpage.");
+
+//define a function
+
+function myFunction()
+{ // statement start here!
+	alert("Your are awesome!");
+}
+
+// function with parameter!
+function myFunction1(FIRST,SECOND,THIRD)
+{
+	var num=FIRST+SECOND-THIRD;
+	
+	document.write(num);
+	
+}
+
+//variables scope -where variables to be used in program as there are two type 1. local 2.global
+
+//arrays
+var prime = new Array(2,3,5,7,11,13,17,19,23);
+
+
+for (var i = 0; i <=8 ; i++) {
+	document.write("</br>"+prime[i]);
+}
+document.write("</br>"+prime.length);
+
+
+// if-else condition
+if (prime[0]<prime[1]) {
+	document.write("</br>condition is true!") ;
+}
+else 
+{
+	document.write("</br>condition is false");
+}
+
+// and operator-->
+
+var a=50;
+var b=30;
+var c=1000;
+if ((a==50)&&(b==30)) {
+	document.write("condition satisfied!!");
+}else
+{
+	document.write("condition false");
+}
+
+// or operator=-->
+if ((a==50)||(b==3)) {
+	document.write("condition satisfied!!");
+}else
+{
+	document.write("condition false");
+}
+
+//switch statement-->
+
+// integer
+var a=12;
+switch(a)
+{
+	case 1:
+		document.write("</br>this is case 1 in switch statement!");
+		break;
+	default:
+		document.write("</br>default");
+}
+
+// string
+var name="kumarsaura";
+switch(name)
+{
+	case "kumarsaurav":
+		document.write("</br>your name appears!!");
+		document.write(name);
+		break;
+	default:
+		document.write("</br>default");
+}
+
+
+//while loop
+ var x=0;
+ while(x<=10)
+ {
+ 	document.write("</br>this is cool! ["+x+"]");
+ 	x++;
+ }
+
+// do-while
+
+var y=0;
+do{
+	document.write("</br>This is iteration no:["+y+"]");
+	y++;
+}while(y<=20);	// var user (here y should be declared before.)
+
+
+// for-loop
+var name="kumar";
+for (var i = 0; i<=name.length; i++) {
+	
+	document.write("</br>this is loop no:["+i+"]");
+
+}
+var string="this is a string"; 
+document.write(string.length); 	 // note that spaces length are also counted!which is 16. 
+
+
+// this is an example for javascript methods.
+var j=string.toUpperCase();
+document.write("</br>"+j); 
+
+// to search for an element by id="something".
+function myFunction(){
+var x;
+x=document.getElementById("b").innerHTML;
+
+document.getElementById("b").innerHTML="</br>this is changed parameter";
+}
+
+
+
+// add timer
+var x=0;
+function add()
+{
+	var y;
+	
+	y=document.getElementById('a').innerHTML;
+	document.getElementById('a').innerHTML=x;
+	x++;
+	
+}
+setinterval('add()',1000);
+
+
+
+function myfunc()
+{
+	var x,y;
+	x=document.getElementById('aa');
+	y=document.getElementById('name');
+	document.getElementById('aa').innerHTML="WELCOME "+y.value;
+}
+</script>
+</body>
+</br>
+
+<input type="button" name="add"  value="start" onclick="add();">
+<p  id="a" >start</p>
+</br>
+<p style="font-size:50px;" id="b">here is original one!!</p>
+<input type="button" onclick="myFunction();" value="click here to change html property">
+<form>
+<!--events-->
+	<input type="button" name="click me" value="click me to alert" onclick="alert('You hovered  me!!');">
+	<input type="button" name="click me" value="hover me to alert" onmouseover="alert('You hovered  me!!');">
+	<input type="button" onclick="myFunction1('this works!!')" value="function">
+	<input type="button" onclick="myFunction1(4,5,1)" value="function">
+</hr>
+<p id="aa">NAME APPEARS HERE!!</p>
+<label>ENTER YOUR NAME : </label><input type="text" id="name">
+<input type="submit"  onclick="myfunc();" value="click me!">
+
+
+
+
+</form>
+</body>
+</html>

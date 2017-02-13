@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>text</title>
+</head>
+<body>
+<script type="text/javascript">
+function myfunc()
+{
+	var x,y;
+	x=document.getElementById('aa');
+	y=document.getElementById('name');
+	
+	document.getElementById('aa').innerHTML="WELCOME "+y.value;
+}
+</script>
+<p id="aa">NAME APPEARS HERE!!</p>
+<label>ENTER YOUR NAME : </label><input type="text" id="name" value="">
+<input type="submit"  onclick="myfunc();" value="click me!">
+
+
+
+</body>
+</html>

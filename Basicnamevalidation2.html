@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>basicvalidation</title>
+	<script type="text/javascript">
+		function myFunction(){
+			var x,y;
+			x=document.getElementById("input").value;
+			y=x.length;
+			if(y>=3)
+			{
+				alert("Welcome  " +x);
+			}
+			else{
+				alert("Usename should be atleast of 3 characters!");
+			}
+		}
+
+	</script>
+</head>
+<body>
+<div style="text-align:center;">
+	<label>Username :</label>
+	<input type="text" name="name" id="input"/>
+	<input type="submit" name="submit" onclick="myFunction();"/>
+</div>
+</body>
+</html>

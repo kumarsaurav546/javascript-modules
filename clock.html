@@ -1,0 +1,34 @@
+<button  class="btn btn-primary btn-lg" type="button" id="min">05 </button><span class="glyphicon glyphicon-option-vertical"></span><button  class="btn btn-primary btn-lg" id="secs">00</button>
+
+<script type="text/javascript">
+					window.setInterval(function(){
+				        var sec = document.getElementById("secs").innerHTML;
+				        var min = document.getElementById("min").innerHTML;
+				        var pr = "";
+				        if(min==0 && sec==0)
+				        {
+				            window.location.href="qr2.php";
+				            //or whatever you want
+				        }
+				        else if(sec<=0)
+				        {
+				        	min = min - 1;
+				        	sec = 59;
+				        	pr = sec.toString();
+				        }
+				        else if(sec >0)
+				        {
+				        	sec -= 1;
+				        	pr = sec.toString();
+				        }
+				        if(sec<10 && sec!=0)
+				        {
+				        	pr = '0'.concat(sec.toString());
+				        }
+				        document.getElementById("secs").innerHTML = pr;
+				        document.getElementById("min").innerHTML = min;
+				    }, 1000);
+
+
+                 </script>
+                 

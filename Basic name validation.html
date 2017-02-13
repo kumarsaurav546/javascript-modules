@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Basic name validation!!</title>
+	<script type="text/javascript">
+	function myFunction() {
+
+                var x = document.getElementById('name').value;
+
+                if (!x.match(/^[A-Z,a-z]([a-z]|[A-Z]|[0-9]){6,25}$/)) {
+
+                    alert("Username should start with an alphabet!");
+
+                    return false;
+
+                } else {
+
+                    alert("Welcome "+ x );
+
+                    return true;
+
+                }
+
+            }
+	</script>
+</head>
+<body>
+<div style="text-align:center;">
+<h1>Basic form validation!!</h1>
+<label>Username :</label>
+<input type="text" name="name" id="name"/>
+<input type="submit" name="name" onclick="myFunction();" value="submit"/>
+
+</div>
+
+</body>
+</html>

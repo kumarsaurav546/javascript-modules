@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>last minute-check</title>
+	<script type="text/javascript">
+		function mycheck(form){
+			for(var i=0;i<form.elements.length;i++)
+			{
+				if(form.elements[i].type=="text"&&form.elements[i].value==""){
+				alert("Fill in all details!");
+				return false;
+			}
+		}
+		return true;
+
+		}
+	</script>
+</head>
+<body>
+<center>
+	<form onsubmit="return mycheck(this);">
+	Please enter all the information!<br>
+	First name:<input type="text" name="first_name"><br>
+	Last name:<input type="text" name="last_name"><br>
+	Rank:<input type="text" name="rank"><br>
+	Serial Number:<input type="text" name="serial number"><br>
+		<input type="submit" name="submit">
+	</form>
+</center>
+<center>
+	<form onsubmit="return mycheck(this);">
+	Please enter all the information!<br>
+	First name:<input type="text" name="first_name"><br>
+	Last name:<input type="text" name="last_name"><br>
+	Rank:<input type="text" name="rank"><br>
+	Serial Number:<input type="text" name="serial number"><br>
+		<input type="submit" name="submit">
+	</form>
+</center>
+
+</body>
+</html>

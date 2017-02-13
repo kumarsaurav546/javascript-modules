@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>charAt()</title>
+	<script type="text/javascript">
+		function myFunction()
+		{
+			var x=document.getElementById("a").value;
+			var y=document.getElementById("b").value;
+			if(y>x.length)
+			{
+				alert("Your index is exceeding the current word length typed in string,sorry!");
+			}
+			else{
+
+				var c=x.charAt(y);
+			document.getElementById("c").innerHTML=c;
+			}
+			
+		}
+	</script>
+</head>
+<body>
+<center>
+	<h1>type the corresponding string and index to retreive the required index.</h1>
+	String :<input type="text" id="a" name="string"/><br>
+	Index:<input type="text" id="b" name="index"/>
+	<p id="c"></p>
+	<input type="submit" name="s" value="Obtain!!" onclick="myFunction();">
+</center>
+</body>
+</html>

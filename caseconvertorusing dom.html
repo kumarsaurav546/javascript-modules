@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>case convertor</title>
+	<script type="text/javascript">
+		function case()
+		{
+			var x=document.forms[0].button1;
+			var y=x.value.toUpperCase();
+			document.getElementByTagName('button1').value=y;
+
+		}
+	</script>
+</head>
+<body>
+<div style="text-align: center;">
+	<h2>1.dom case convertor</h2>
+	<form>
+	<label>Name :</label>
+	<input type="text" name="name" id="name"/>
+	<input type="submit" name="button1" value="lowercase" onclick="case();">
+	<input type="submit" name="button" value="uppercase" onclick="case();">
+	<p id="a"></p>
+</div>
+
+</body>
+</html>
